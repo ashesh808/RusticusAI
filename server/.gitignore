@@ -1,2 +1,15 @@
-modules/__pycache__/
-modules/data/*
+#pycache
+Modules/__pycache__/
+Modules/data/*
+Models/__pycache__/
+Interfaces/__pycache__/
+Entities/__pycache__/
+DataMappers/__pycache__/
+__pycache__
+
+#Environment Files
+.env
+
+#TestFiles
+TestDatabase.py
+TestUser.py

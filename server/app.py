@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from modules.file_uploader import FileUploader
+from Modules.file_uploader import FileUploader
 
 import os
 

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class ContentParser(ABC):
+class IParser(ABC):
     @abstractmethod
     def parse(self):
         pass
