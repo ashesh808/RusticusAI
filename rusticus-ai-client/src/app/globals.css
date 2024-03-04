@@ -1,3 +1,6 @@
+/* globals.css */
+
+/* Tailwind CSS base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,8 +29,75 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* New styles for upload component */
+.upload-container {
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-content {
+  width: 420px;
+  background-color: #ffffff;
+  padding: 64px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.upload-header {
+  text-align: center;
+}
+
+.upload-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.upload-description {
+  font-size: 14px;
+  color: #999999;
+}
+
+.dropzone {
+  width: 100%;
+  padding: 48px;
+  border: 2px dashed #3182ce;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 96px;
+  height: 96px;
+  fill: #3182ce;
+}
+
+.upload-text {
+  font-size: 16px;
+  color: #666666;
+}
+
+.uploaded-files {
+  width: 100%;
+}
+
+.uploaded-files-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.uploaded-files-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
 }
