@@ -10,13 +10,19 @@ type File = {
 function Upload() {
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     maxFiles: 3,
-  });
-  console.log("acceptedFiles", acceptedFiles);
-
+    accept: {
+      ".pdf": ["application/pdf"],
+      ".txt": ["text/plain"],
+      ".pptx": ["application/vnd.openxmlformats-officedocument.presentationml.presentation"]
+    } 
+  }
+  );
   // Accepted file items rendering
-  const acceptedFileItems = acceptedFiles.map((file) => (
-    <p key={file.path}> {file.path}</p>
-  ));
+  const acceptedFileItems = acceptedFiles.map((file => (
+    <p key={file.name}> {file.name}</p>
+  )));
+
+  console.log("acceptedFiles", acceptedFiles);
 
   return (
     <>
